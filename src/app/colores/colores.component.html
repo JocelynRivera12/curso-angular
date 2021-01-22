@@ -1,0 +1,22 @@
+<div class="main-container">
+  <div class="colores-container" [formGroup]="formColores">
+    <mat-form-field >
+      <mat-label> Favorite color </mat-label>
+      <input matInput placeholder="Ex. Rojo" formControlName="color1">
+    </mat-form-field>
+
+   <mat-form-field >
+    <mat-label> Color Primario  </mat-label>
+    <input matInput placeholder="Ex. Azul" formControlName="color2">
+  </mat-form-field>
+
+  <mat-form-field >
+    <mat-label> Color Secundario  </mat-label>
+    <input matInput placeholder="Ex. Amarillo" formControlName="color3">
+  </mat-form-field>
+
+   <button mat-raised-button color="primary" [disabled]="formColores.invalid"  (click)="saveClick()">
+    Guardar
+   </button>
+  </div>
+</div>
