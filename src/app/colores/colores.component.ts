@@ -59,11 +59,7 @@ export class ColoresComponent implements OnInit {
         alert ('occurrio un error al insertar');
       });
 
-    this.colores.saveColores(data).subscribe(() => {
-      alert('Elemento guardado exitosamente');
-    }, error => {
-      alert ('Error al insertar');
-    });
+
    }
   }
 }
